@@ -1,5 +1,5 @@
 # Please.
-So This starts as the player(s) are an teenager and exploring and seems to be old abandoned store and looks around the place and find some documents about this place including owner, occurences on why the place shuts down and while the player is looking through these the is cop lights and sounds outside the player's run to the back door in the staff room open it and then fall into a sewer.
+The game begins with the player or players as teenagers exploring what appears to be an old, abandoned store. They look around and discover some documents about the place, including information about its owner and the reasons behind its closure. As they are looking through these documents, police lights and sirens can be heard outside. The player then runs to the staff room's back door, opens it, and falls into a sewer.
 # Help.
 Teleported to new location and location is very odd should either look like and very long garage then leads into a playplace but very weird also with weird and
 intricit designs aswell as puzzle these puzzle should not be easy at all and actually very challenge kinda like a escape room some puzzles to be rng so it isn't
