@@ -1,6 +1,5 @@
 # Please.
-Drooped off from bus the work open doors clock in turn on generater and radio do tasks for example starting up systems and cleaning stocking helping employees etc.
-Player(s) the player's are told to go check for something by the manager(Manager will just be an audio no model) and player go to check but fall in a sewer and fades to black
+So This starts as the player(s) are an teenager and exploring and seems to be old abandoned store and looks around the place and find some documents about this place including owner, occurences on why the place shuts down and while the player is looking through these the is cop lights and sounds outside the player's run to the back door in the staff room open it and then fall into a sewer.
 # Help.
 Teleported to new location and location is very odd should either look like and very long garage then leads into a playplace but very weird also with weird and
 intricit designs aswell as puzzle these puzzle should not be easy at all and actually very challenge kinda like a escape room some puzzles to be rng so it isn't
