@@ -76,4 +76,24 @@ game.Players.PlayerAdded:Connect(function(player)
     checkBadge(player)
 end)
 ```
+In this script:
+- Replace `YOUR_BADGE_ID_HERE` with the actual ID of the badge you want to check.
+- The `checkBadge` function takes a player as input, checks if they have the specified badge using `UserHasBadgeAsync()`, and prints a message based on the result.
+- The script connects to the `PlayerAdded` event to run `checkBadge` for each player that joins the game.
+
+This script will help you identify players who have a specific badge in Roblox and print out whether they possess that badge or not.
+
+Citations:
+[1] https://devforum.roblox.com/t/how-do-i-check-if-a-player-has-a-particular-badge-or-not/369298
+[2] https://devforum.roblox.com/t/badge-doesnt-award-when-script-is-ran/2078922
+[3] https://devforum.roblox.com/t/how-do-i-go-about-checking-if-the-user-has-a-badge-andor-gamepass/1196680
+[4] https://stackoverflow.com/questions/75035975/getting-a-badge-if-the-players-value-is-greater-than-that-numberroblox-studio
+[5] https://devforum.roblox.com/t/how-to-check-if-a-player-has-just-earned-a-badge/2515761
+[6] https://devforum.roblox.com/t/how-would-i-print-something-on-a-player-connecting/815124
+[7] https://www.youtube.com/watch?v=eoKpJIyCL7Q
+[8] https://www.youtube.com/watch?v=egwMVrbD_hU
+[9] https://create.roblox.com/docs/reference/engine/classes/BadgeService
+[10] https://create.roblox.com/docs/production/publishing/badges
+[11] https://devforum.roblox.com/t/how-do-i-make-a-if-player-has-badge-script/2303921
+[12] https://www.youtube.com/watch?v=YFC94PqTNc8
 [prompt](https://www.perplexity.ai/search/give-me-an-0inDq8EnSB6Fbp_fqT9siw#0)
