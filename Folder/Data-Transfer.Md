@@ -54,7 +54,7 @@ Citations:
 
 You can use badges, userid's, etc. for data storage really anything that can stick onto an charatcer really communicating to games with stuff like say you're making an difficulty and it communicates through separate games that adjusts difficulty with an message is a real difficult task but can be accomplished with work around but for that i say just duplicate the game and adjust it and then send or teleport the player(s) to that certain game :man_shrugging: other than that for things like badges or library items like bought and purchased game products can be communicated between games here is an code example below
 
-```
+```lua
 -- Define the badge ID you want to check for
 local badgeId = YOUR_BADGE_ID_HERE
 
