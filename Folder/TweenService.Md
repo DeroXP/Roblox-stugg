@@ -1,0 +1,1 @@
+### Tweening Models are an difficult task usually finding videos on youtube or any other source uses CFrame Values etc. but an more direct way can be setting The models primary part and having this model tweening
