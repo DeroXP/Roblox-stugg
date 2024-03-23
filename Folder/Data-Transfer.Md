@@ -52,7 +52,7 @@ Citations:
 
 # Now on My Knowledge
 
-Anything that can be attached to a character, such as badges or userids, can be used to store data. For example, if you're creating a challenge and it communicates through other games that adjust difficulty with a message, that's a really tough task, but it can be completed with a workaround. To do that, simply duplicate the game, make the necessary adjustments, and then send or teleport the player(s) to that specific game:man_shrugging Other than that, the following code sample can be used to communicate across games for things like badges or library objects like acquired and paid game products.
+Anything that can be attached to a character, such as badges or userids, can be used to store data. For example, if you're creating a challenge and it communicates through other games that adjust difficulty with a message, that's a really tough task, but it can be completed with a workaround. To do that, simply duplicate the game, make the necessary adjustments, and then send or teleport the player(s) to that specific game :man_shrugging: Other than that, the following code sample can be used to communicate across games for things like badges or library objects like acquired and paid game products.
 
 ```lua
 -- Define the badge ID you want to check for
