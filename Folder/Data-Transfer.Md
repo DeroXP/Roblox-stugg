@@ -1,0 +1,47 @@
+Contents From an https://www.perplexity.ai prompt
+
+exact prompt https://www.perplexity.ai/search/in-roblox-studio-R7MpyOGHSluO2icI5B7ffg#0
+
+In Roblox Studio, transferring data or sending messages between different games (referred to as "places" within a single "universe") requires a more complex approach than communication within the same game. Based on the information provided in the search results, there are several methods to achieve cross-game communication, each with its own set of considerations and technical requirements.
+
+### Using Data Stores and External Databases
+
+One common method involves using Data Stores to save player data in one game and then retrieving it in another. This approach is particularly useful for persistent data that doesn't need to be transferred in real-time. For real-time data transfer or when Data Stores cannot meet the requirements (e.g., for completely separate games in different universes), developers might resort to using external databases. Services like Firebase or MongoDB can be used to store and retrieve data across different games. This requires setting up an external web server (with NodeJS recommended for its ease of use) to handle API requests made through Roblox's `HTTPService` for data operations[1].
+
+### TeleportService with Data Transfer
+
+Another method mentioned involves using the `TeleportService` to transfer players between games while carrying over specific data. This is done by attaching data to the `TeleportOptions` object, which is then accessible in the destination game through the player's `JoinData`. However, this method is limited to transferring simple data types and cannot move complex objects or instances directly[4].
+
+### MessagingService for Real-Time Communication
+
+For real-time communication between servers of the same game, Roblox's `MessagingService` can be utilized. It allows servers to publish and subscribe to messages on specific topics in real-time. While this service is designed for communication within the same game (experience), it demonstrates the kind of real-time messaging capabilities available. However, for cross-game communication, a similar real-time system would need to be implemented externally[3].
+
+### Remote Events and Functions
+
+Remote Events and Remote Functions are primarily used for client-server communication within the same game. They facilitate custom events and callback functions across the client-server boundary. While not directly applicable to cross-game communication, understanding how these work is crucial for managing data flow and events within each individual game[2][5].
+
+### Conclusion
+
+To send a message or transfer data from one game to another in Roblox Studio, developers typically use a combination of Data Stores for persistent data, external databases for cross-universe or real-time data transfer, and `TeleportService` for transferring players with data between games. Each method requires a good understanding of Roblox's services like `HTTPService` for external API calls, and careful consideration of data security and integrity. For real-time communication needs across different games, developers might need to implement their own messaging system using external services.
+
+Citations:
+[1] https://devforum.roblox.com/t/how-can-i-transfer-data-between-games/732725
+[2] https://create.roblox.com/docs/scripting/events/remote
+[3] https://create.roblox.com/docs/reference/engine/classes/MessagingService
+[4] https://devforum.roblox.com/t/moving-data-between-games/1831212
+[5] https://create.roblox.com/docs/reference/engine/classes/RemoteEvent
+[6] https://devforum.roblox.com/t/i-need-a-detailed-explanation-on-how-messagingservice-works/1892345
+[7] https://devforum.roblox.com/t/transferring-data-between-2-games/1319490
+[8] https://devforum.roblox.com/t/can-someone-explane-how-remote-events-work-and-why-do-i-need-to-use-them/870382
+[9] https://create.roblox.com/docs/cloud-services/cross-server-messaging
+[10] https://devforum.roblox.com/t/is-there-a-way-to-transfer-data/1225880
+[11] https://devforum.roblox.com/t/lets-learn-how-to-use-remote-eventsrewritten-and-improved-tutorial/2394666
+[12] https://devforum.roblox.com/t/messaging-service/253962
+[13] https://devforum.roblox.com/t/how-to-transfer-data-between-games/1009887
+[14] https://www.youtube.com/watch?v=qspFjRDglJA
+[15] https://devforum.roblox.com/t/is-it-possible-to-transfer-data-from-a-datastore-between-games/400886
+[16] https://www.youtube.com/watch?v=r1g-duNz1Q8
+[17] https://devforum.roblox.com/t/is-it-possible-to-transfer-datastores-between-2-different-experiences/2424345
+[18] https://devforum.roblox.com/t/remote-events-remote-functions-when-to-use-them/550786
+[19] https://devforum.roblox.com/t/is-it-possible-to-transfer-data-across-games/465481
+[20] https://www.youtube.com/watch?v=LjoLWLGQNA0
