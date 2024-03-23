@@ -1,6 +1,6 @@
 Contents From an https://www.perplexity.ai prompt
 
-exact prompt https://www.perplexity.ai/search/in-roblox-studio-R7MpyOGHSluO2icI5B7ffg#0
+Exact prompt https://www.perplexity.ai/search/in-roblox-studio-R7MpyOGHSluO2icI5B7ffg#0
 
 In Roblox Studio, transferring data or sending messages between different games (referred to as "places" within a single "universe") requires a more complex approach than communication within the same game. Based on the information provided in the search results, there are several methods to achieve cross-game communication, each with its own set of considerations and technical requirements.
 
