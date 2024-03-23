@@ -46,5 +46,5 @@ Citations:
 [19] https://devforum.roblox.com/t/is-it-possible-to-transfer-data-across-games/465481
 [20] https://www.youtube.com/watch?v=LjoLWLGQNA0
 
-[![Basic Usage - okeanskiy]](https://www.youtube.com/watch?v=xZqxMjO62fk)
-[![Global Updates - okeanskiy]](https://www.youtube.com/watch?v=eQpNLPDs-yg&t=1s)
+[Basic Usage - okeanskiy](https://www.youtube.com/watch?v=xZqxMjO62fk)
+[Global Updates - okeanskiy](https://www.youtube.com/watch?v=eQpNLPDs-yg&t=1s)
