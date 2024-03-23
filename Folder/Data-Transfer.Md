@@ -49,3 +49,31 @@ Citations:
 [Basic Usage - okeanskiy](https://www.youtube.com/watch?v=xZqxMjO62fk)
 
 [Global Updates - okeanskiy](https://www.youtube.com/watch?v=eQpNLPDs-yg&t=1s)
+
+# Now on My Knowledge
+
+You can use badges, userid's, etc. for data storage really anything that can stick onto an charatcer really communicating to games with stuff like say you're making an difficulty and it communicates through separate games that adjusts difficulty with an message is a real difficult task but can be accomplished with work around but for that i say just duplicate the game and adjust it and then send or teleport the player(s) to that certain game :man_shrugging: other than that for things like badges or library items like bought and purchased game products can be communicated between games here is an code example below
+
+```
+-- Define the badge ID you want to check for
+local badgeId = YOUR_BADGE_ID_HERE
+
+-- Get the BadgeService
+local BadgeService = game:GetService("BadgeService")
+
+-- Function to check if a player has the badge
+local function checkBadge(player)
+    local userId = player.UserId
+    if BadgeService:UserHasBadgeAsync(userId, badgeId) then
+        print(player.Name .. " has the badge with ID: " .. badgeId)
+    else
+        print(player.Name .. " does not have the badge with ID: " .. badgeId)
+    end
+end
+
+-- Connect to PlayerAdded event to check badges when players join
+game.Players.PlayerAdded:Connect(function(player)
+    checkBadge(player)
+end)
+```
+[prompt](https://www.perplexity.ai/search/give-me-an-0inDq8EnSB6Fbp_fqT9siw#0)
