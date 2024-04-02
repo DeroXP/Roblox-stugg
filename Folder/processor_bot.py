@@ -6,6 +6,7 @@ import keyboard
 import numpy as np
 import os
 import json
+import cv2
 
 class Dot:
     def __init__(self, canvas, x, y, key):
@@ -54,32 +55,20 @@ def load_dot_positions():
             dot_positions = json.load(f)
     return dot_positions
 
-def check_color(x, y, key, q_pressed, terminate_event):
+def check_color(x, y, key, q_pressed, terminate_event, status, area_width=2, area_height=35, threshold=30): # chagne threshold to lower values for better ai 30 is around the regular us osu! player and 1 is i say a advanced osu player haven't quite gotten to get a bot that has zero mistakes...
     while not terminate_event.is_set():
         try:
             if q_pressed.is_set():
-                # Grab the screen image at the coordinates around the dot
-                screen_image = ImageGrab.grab(bbox=(x - 1, y - 1, x + 2, y + 2))
+                # Grab the screen image with an expanded bounding box around the dot
+                screen_image = np.array(ImageGrab.grab(bbox=(x - area_width, y - area_height, x + area_width, y + area_height)))
 
-                # Convert the image to grayscale using PIL
-                grayscale_image = ImageOps.grayscale(screen_image)
+                # Convert the image to grayscale using OpenCV
+                grayscale_image = cv2.cvtColor(screen_image, cv2.COLOR_BGR2GRAY)
 
-                # Convert the grayscale image to a numpy array for faster processing
-                grayscale_array = np.array(grayscale_image)
-
-                # Calculate the average grayscale value
-                avg_grayscale = np.mean(grayscale_array)
-
-                # Check if the average grayscale value is below a threshold
-                threshold = 5  # Adjusted threshold
-                if avg_grayscale < threshold:
-                    # Perform double check by examining pixel values
-                    if np.all(grayscale_array < 50):  # Check if all pixel values are below 50 (considered black)
-                        print(f"Position ({x}, {y}) is black.")
-                        if key in ['d', 'f', 'j', 'k']:
-                            keyboard.release(key)
-                    else:
-                        print(f"Position ({x}, {y}) is not black.")
+                # Check if black color is detected
+                if np.mean(grayscale_image) < threshold:
+                    print(f"Position ({x}, {y}) is black.")
+                    keyboard.release(key)
                 else:
                     print(f"Position ({x}, {y}) is not black.")
                     print(f"Key {key} is pressed for dot at position ({x}, {y}).")
@@ -89,11 +78,15 @@ def check_color(x, y, key, q_pressed, terminate_event):
 
         except Exception as e:
             print(f"Error in color checking process: {e}")
+            status['color_process'] = 'error'  # Update status in case of error
 
-        # Introduce a small delay to control the speed of the loop
-        time.sleep(0.001)  # Adjust the delay time as needed
+        # Update process status
+        status['color_process'] = 'running'
 
-def key_monitor(q_pressed, terminate_event):
+        # Minimize sleep interval to keep the process active
+        time.sleep(0.0001)  # Adjust the delay time as needed
+
+def key_monitor(q_pressed, terminate_event, status):
     q_toggle = False
     while not terminate_event.is_set():
         if keyboard.is_pressed('q'):
@@ -102,8 +95,13 @@ def key_monitor(q_pressed, terminate_event):
                 q_pressed.set()
             else:
                 q_pressed.clear()
-            time.sleep(0.2)  # debounce delay
-        time.sleep(0.01)  # sleep to avoid high CPU usage
+            time.sleep(0.01)  # debounce delay
+
+        # Minimize sleep interval to keep the process active
+        time.sleep(0.0001)  # Adjust the delay time as needed
+
+        # Update process status
+        status['key_monitor'] = 'running'
 
 def main():
     # Create dots and map them to keys
@@ -130,6 +128,10 @@ def main():
 
     root.protocol("WM_DELETE_WINDOW", on_close)
 
+    # Create shared status dictionary
+    manager = multiprocessing.Manager()
+    status = manager.dict()
+
     def place_dot(event):
         nonlocal dots
         if len(dots) < 4:
@@ -137,7 +139,7 @@ def main():
             dot = Dot(canvas, event.x, event.y, key)
             dots.append(dot)
             # Start a process for checking color for this dot
-            check_color_process = multiprocessing.Process(target=check_color, args=(event.x, event.y, key, q_pressed, terminate_event))
+            check_color_process = multiprocessing.Process(target=check_color, args=(event.x, event.y, key, q_pressed, terminate_event, status))
             check_color_process.daemon = True
             check_color_process.start()
             print(f"Dot placed at position ({event.x}, {event.y}) with key '{key}' assigned.")
@@ -150,12 +152,12 @@ def main():
         dot = Dot(canvas, pos['x'], pos['y'], pos['key'])
         dots.append(dot)
         # Start a process for checking color for this dot
-        check_color_process = multiprocessing.Process(target=check_color, args=(pos['x'], pos['y'], pos['key'], q_pressed, terminate_event))
+        check_color_process = multiprocessing.Process(target=check_color, args=(pos['x'], pos['y'], pos['key'], q_pressed, terminate_event, status))
         check_color_process.daemon = True
         check_color_process.start()
 
     # Start process for monitoring 'q' key press
-    key_monitor_process = multiprocessing.Process(target=key_monitor, args=(q_pressed, terminate_event))
+    key_monitor_process = multiprocessing.Process(target=key_monitor, args=(q_pressed, terminate_event, status))
     key_monitor_process.daemon = True
     key_monitor_process.start()
 
@@ -164,4 +166,4 @@ def main():
 if __name__ == "__main__":
     main()
 
-#chatgpt used for side notes by DeroVB (https://github.com/DeroXP)
+# chatgpt used for side notes, made by derovb:)
