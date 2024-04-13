@@ -8,6 +8,8 @@ In Roblox Studio, transferring data or sending messages between different games 
 
 One common method involves using Data Stores to save player data in one game and then retrieving it in another. This approach is particularly useful for persistent data that doesn't need to be transferred in real-time. For real-time data transfer or when Data Stores cannot meet the requirements (e.g., for completely separate games in different universes), developers might resort to using external databases. Services like Firebase or MongoDB can be used to store and retrieve data across different games. This requires setting up an external web server (with NodeJS recommended for its ease of use) to handle API requests made through Roblox's `HTTPService` for data operations[1].
 
+More info [here](https://raw.githubusercontent.com/DeroXP/Roblox-stugg/main/Folder/Data-Storage.Md).
+
 ### TeleportService with Data Transfer
 
 Another method mentioned involves using the `TeleportService` to transfer players between games while carrying over specific data. This is done by attaching data to the `TeleportOptions` object, which is then accessible in the destination game through the player's `JoinData`. However, this method is limited to transferring simple data types and cannot move complex objects or instances directly[4].
