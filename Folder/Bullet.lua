@@ -1,9 +1,23 @@
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local UIS = game:GetService("UserInputService")
-local Settings : SettingsType = require(script:WaitForChild("FiredNo"))
+--local Settings : SettingsType = require(script:WaitForChild("FiredNo"))
+local TweenService = game:GetService("TweenService")
 
-local Shooting = Settings.Shooting
+local Humanoid = game.Players.LocalPlayer.Character:FindFirstChild("Humanoid")
 
-if Shooting == 1 then
-	local bullet = ReplicatedStorage.Bullet:Clone()
+--local Shooting = Settings.Shooting
+
+if Humanoid:GetAttribute("Equipped") == true then
+	UIS.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			local newBullet = ReplicatedStorage.Bullet:Clone()
+			newBullet.Parent = workspace
+			newBullet.Position = workspace.CurrentCamera.CFrame.p
+			
+			newBullet.Velocity = workspace.CurrentCamera.CFrame.LookVector * 50
+			
+			wait(5)
+			newBullet:Destroy()
+		end
+	end)
 end
