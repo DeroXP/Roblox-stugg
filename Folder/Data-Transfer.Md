@@ -29,24 +29,24 @@ To send a message or transfer data from one game to another in Roblox Studio, de
 Citations:
 [1](https://devforum.roblox.com/t/how-can-i-transfer-data-between-games/732725)
 [2](https://create.roblox.com/docs/scripting/events/remote)
-[3] https://create.roblox.com/docs/reference/engine/classes/MessagingService
-[4] https://devforum.roblox.com/t/moving-data-between-games/1831212
-[5] https://create.roblox.com/docs/reference/engine/classes/RemoteEvent
-[6] https://devforum.roblox.com/t/i-need-a-detailed-explanation-on-how-messagingservice-works/1892345
-[7] https://devforum.roblox.com/t/transferring-data-between-2-games/1319490
-[8] https://devforum.roblox.com/t/can-someone-explane-how-remote-events-work-and-why-do-i-need-to-use-them/870382
-[9] https://create.roblox.com/docs/cloud-services/cross-server-messaging
-[10] https://devforum.roblox.com/t/is-there-a-way-to-transfer-data/1225880
-[11] https://devforum.roblox.com/t/lets-learn-how-to-use-remote-eventsrewritten-and-improved-tutorial/2394666
-[12] https://devforum.roblox.com/t/messaging-service/253962
-[13] https://devforum.roblox.com/t/how-to-transfer-data-between-games/1009887
-[14] https://www.youtube.com/watch?v=qspFjRDglJA
-[15] https://devforum.roblox.com/t/is-it-possible-to-transfer-data-from-a-datastore-between-games/400886
-[16] https://www.youtube.com/watch?v=r1g-duNz1Q8
-[17] https://devforum.roblox.com/t/is-it-possible-to-transfer-datastores-between-2-different-experiences/2424345
-[18] https://devforum.roblox.com/t/remote-events-remote-functions-when-to-use-them/550786
-[19] https://devforum.roblox.com/t/is-it-possible-to-transfer-data-across-games/465481
-[20] https://www.youtube.com/watch?v=LjoLWLGQNA0
+[3](https://create.roblox.com/docs/reference/engine/classes/MessagingService)
+[4](https://devforum.roblox.com/t/moving-data-between-games/1831212)
+[5](https://create.roblox.com/docs/reference/engine/classes/RemoteEvent)
+[6](https://devforum.roblox.com/t/i-need-a-detailed-explanation-on-how-messagingservice-works/1892345)
+[7](https://devforum.roblox.com/t/transferring-data-between-2-games/1319490)
+[8](https://devforum.roblox.com/t/can-someone-explane-how-remote-events-work-and-why-do-i-need-to-use-them/870382)
+[9](https://create.roblox.com/docs/cloud-services/cross-server-messaging)
+[10](https://devforum.roblox.com/t/is-there-a-way-to-transfer-data/1225880)
+[11](https://devforum.roblox.com/t/lets-learn-how-to-use-remote-eventsrewritten-and-improved-tutorial/2394666)
+[12](https://devforum.roblox.com/t/messaging-service/253962)
+[13](https://devforum.roblox.com/t/how-to-transfer-data-between-games/1009887)
+[14](https://www.youtube.com/watch?v=qspFjRDglJA)
+[15](https://devforum.roblox.com/t/is-it-possible-to-transfer-data-from-a-datastore-between-games/400886)
+[16](https://www.youtube.com/watch?v=r1g-duNz1Q8)
+[17](https://devforum.roblox.com/t/is-it-possible-to-transfer-datastores-between-2-different-experiences/2424345)
+[18](https://devforum.roblox.com/t/remote-events-remote-functions-when-to-use-them/550786)
+[19](https://devforum.roblox.com/t/is-it-possible-to-transfer-data-across-games/465481)
+[20](https://www.youtube.com/watch?v=LjoLWLGQNA0)
 
 [Basic Usage - okeanskiy](https://www.youtube.com/watch?v=xZqxMjO62fk)
 
@@ -86,18 +86,18 @@ In this script:
 This script will help you identify players who have a specific badge in Roblox and print out whether they possess that badge or not.
 
 Citations:
-[1] https://devforum.roblox.com/t/how-do-i-check-if-a-player-has-a-particular-badge-or-not/369298
-[2] https://devforum.roblox.com/t/badge-doesnt-award-when-script-is-ran/2078922
-[3] https://devforum.roblox.com/t/how-do-i-go-about-checking-if-the-user-has-a-badge-andor-gamepass/1196680
-[4] https://stackoverflow.com/questions/75035975/getting-a-badge-if-the-players-value-is-greater-than-that-numberroblox-studio
-[5] https://devforum.roblox.com/t/how-to-check-if-a-player-has-just-earned-a-badge/2515761
-[6] https://devforum.roblox.com/t/how-would-i-print-something-on-a-player-connecting/815124
-[7] https://www.youtube.com/watch?v=eoKpJIyCL7Q
-[8] https://www.youtube.com/watch?v=egwMVrbD_hU
-[9] https://create.roblox.com/docs/reference/engine/classes/BadgeService
-[10] https://create.roblox.com/docs/production/publishing/badges
-[11] https://devforum.roblox.com/t/how-do-i-make-a-if-player-has-badge-script/2303921
-[12] https://www.youtube.com/watch?v=YFC94PqTNc8
+[1](https://devforum.roblox.com/t/how-do-i-check-if-a-player-has-a-particular-badge-or-not/369298)
+[2](https://devforum.roblox.com/t/badge-doesnt-award-when-script-is-ran/2078922)
+[3](https://devforum.roblox.com/t/how-do-i-go-about-checking-if-the-user-has-a-badge-andor-gamepass/1196680)
+[4](https://stackoverflow.com/questions/75035975/getting-a-badge-if-the-players-value-is-greater-than-that-numberroblox-studio)
+[5](https://devforum.roblox.com/t/how-to-check-if-a-player-has-just-earned-a-badge/2515761)
+[6](https://devforum.roblox.com/t/how-would-i-print-something-on-a-player-connecting/815124)
+[7](https://www.youtube.com/watch?v=eoKpJIyCL7Q)
+[8](https://www.youtube.com/watch?v=egwMVrbD_hU)
+[9](https://create.roblox.com/docs/reference/engine/classes/BadgeService)
+[10](https://create.roblox.com/docs/production/publishing/badges)
+[11](https://devforum.roblox.com/t/how-do-i-make-a-if-player-has-badge-script/2303921)
+[12](https://www.youtube.com/watch?v=YFC94PqTNc8)
 
 [prompt](https://www.perplexity.ai/search/give-me-an-0inDq8EnSB6Fbp_fqT9siw#0)
 
