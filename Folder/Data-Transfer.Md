@@ -27,8 +27,8 @@ Remote Events and Remote Functions are primarily used for client-server communic
 To send a message or transfer data from one game to another in Roblox Studio, developers typically use a combination of Data Stores for persistent data, external databases for cross-universe or real-time data transfer, and `TeleportService` for transferring players with data between games. Each method requires a good understanding of Roblox's services like `HTTPService` for external API calls, and careful consideration of data security and integrity. For real-time communication needs across different games, developers might need to implement their own messaging system using external services.
 
 Citations:
-[1] https://devforum.roblox.com/t/how-can-i-transfer-data-between-games/732725
-[2] https://create.roblox.com/docs/scripting/events/remote
+[1](https://devforum.roblox.com/t/how-can-i-transfer-data-between-games/732725)
+[2](https://create.roblox.com/docs/scripting/events/remote)
 [3] https://create.roblox.com/docs/reference/engine/classes/MessagingService
 [4] https://devforum.roblox.com/t/moving-data-between-games/1831212
 [5] https://create.roblox.com/docs/reference/engine/classes/RemoteEvent
