@@ -33,3 +33,7 @@ One challenge we faced was the appearance of bright spots when **probes** were t
 2. [**RunService**](https://create.roblox.com/docs/reference/engine/classes/RunService)
 3. [**Lighting**](https://create.roblox.com/docs/reference/engine/classes/Lighting)
 4. [**ReplicatedStorage**](https://create.roblox.com/docs/reference/engine/classes/ReplicatedStorage)
+
+# Credits
+
+I didn't come up with this idea fully I saw another person [From THis Video](https://www.youtube.com/watch?v=_dhz0PhVtv8) and since it was not open-sourced i decied to try it myself and actually gottne somewhere so credits that that person and also credits to me for doing this.
