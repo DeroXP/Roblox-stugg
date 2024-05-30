@@ -27,3 +27,10 @@ The result is a visually stunning real-time generated lighting effect.
 To achieve this, we first create a cube of probes and make them follow the character's position using `RootPart`. Then, we orient the cubes based on the sun's direction. Rays are emitted from the probes, traveling in the opposite direction of the sun until they encounter an object. Upon hitting an object, the ray captures the object's color (if available) or resorts to the color of the atmosphere. The colors captured by the rays are combined and averaged to create a suitable lighting color for the environment. Additionally, we account for the brightness of the lighting by shooting another ray towards the sun. If this ray is blocked by an object, the lighting is dimmed accordingly.
 
 One challenge we faced was the appearance of bright spots when probes were too close to objects. To address this, we adjusted the brightness of the lighting based on proximity to objects, ensuring a more realistic effect. Another challenge was ensuring accurate lighting when transitioning between indoor and outdoor environments. We solved this by having probes check the brightness of neighboring probes and adjusting their own brightness accordingly.
+
+### Services
+
+[TweenService](https://create.roblox.com/docs/reference/engine/classes/TweenService)
+[RunService](https://create.roblox.com/docs/reference/engine/classes/RunService)
+[Lighting](https://create.roblox.com/docs/reference/engine/classes/Lighting)
+[ReplicatedStorage](https://create.roblox.com/docs/reference/engine/classes/ReplicatedStorage)
