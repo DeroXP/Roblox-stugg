@@ -1,7 +1,3 @@
-Certainly! Here's a formatted version of your text for better readability in markdown:
-
----
-
 # Ray Tracing in Roblox
 
 Ray tracing in Roblox is not yet a native feature, but we can replicate its effects using rays, light, and parts.
