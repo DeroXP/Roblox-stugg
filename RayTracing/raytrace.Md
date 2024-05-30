@@ -10,9 +10,9 @@ Ray tracing in Roblox is not yet a native feature, but we can replicate its effe
 
 In the [raytracing.lua](https://raw.githubusercontent.com/DeroXP/Roblox-stugg/main/RayTracing/raytrace.lua) file provided, I've created a system that generates a cube of blocks. These blocks are positioned around the character, forming a cube shape. 
 
-[Watch a video demonstration](https://github.com/DeroXP/Roblox-stugg/raw/main/RayTracing/2024-05-30%2013-59-44.mp4)
+<img src="https://github.com/DeroXP/Roblox-stugg/blob/main/RayTracing/2024-05-30%2013-59-44.gif?raw=true" width="50%">
 
-The cubes are oriented to face away from the sun to achieve more realistic lighting based on sunlight. Additionally, the system accounts for other pre-loaded lighting conditions.
+The cubes are oriented to face away from the sun to achieve more realistic lighting based on sunlight. Additionally, the system accounts for other pre-loaded lighting conditions (not yet).
 
 ### Rays
 
