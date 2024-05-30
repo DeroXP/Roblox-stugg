@@ -1,3 +1,4 @@
+# RayTrace
 **Ray tracing** in **Roblox** is not yet a native feature, but we can replicate its effects using **rays**, **light**, and **parts**.
 
 ### Explanation
