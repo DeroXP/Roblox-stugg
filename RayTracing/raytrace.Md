@@ -11,4 +11,4 @@ with the cube they are orientatated so they are pointing the opposite direction 
 
 ### Rays
 
-[<img src="https://github.com/DeroXP/Roblox-stugg/blob/main/RayTracing/Screenshot%20(212).png?raw=true" width="50%">]
+<img src="https://github.com/DeroXP/Roblox-stugg/blob/main/RayTracing/Screenshot%20(212).png?raw=true" width="50%">
