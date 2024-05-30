@@ -30,10 +30,7 @@ One challenge we faced was the appearance of bright spots when probes were too c
 
 ### Services
 
-[TweenService](https://create.roblox.com/docs/reference/engine/classes/TweenService)
-
-[RunService](https://create.roblox.com/docs/reference/engine/classes/RunService)
-
-[Lighting](https://create.roblox.com/docs/reference/engine/classes/Lighting)
-
-[ReplicatedStorage](https://create.roblox.com/docs/reference/engine/classes/ReplicatedStorage)
+1. [TweenService](https://create.roblox.com/docs/reference/engine/classes/TweenService)
+2. [RunService](https://create.roblox.com/docs/reference/engine/classes/RunService)
+3. [Lighting](https://create.roblox.com/docs/reference/engine/classes/Lighting)
+4. [ReplicatedStorage](https://create.roblox.com/docs/reference/engine/classes/ReplicatedStorage)
