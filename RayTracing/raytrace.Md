@@ -15,3 +15,7 @@ with the cube they are orientatated so they are pointing the opposite direction 
 
 In this screenshot there is about 90 rays coming out of each probe which are also correlated to the sun direction and they also have a spread to capture more color.
 This is to get all colors rays capture and then average the color into the light which gives the lighting a more dynamic feel to it.
+
+### Result
+
+<img src="https://github.com/DeroXP/Roblox-stugg/blob/main/RayTracing/Screenshot%20(211).png?raw=true" width="50%">
