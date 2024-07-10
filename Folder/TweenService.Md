@@ -2,7 +2,8 @@
 
 **this is a regular example below by chatgpt since im lazy**
 
-`Certainly! Below is an example script that demonstrates how to create a toggle button in Roblox using the TweenService to tween a frame to a new position and back to its original position when clicked.
+---------------------------------------------------------------------
+Certainly! Below is an example script that demonstrates how to create a toggle button in Roblox using the TweenService to tween a frame to a new position and back to its original position when clicked.
 
 First, make sure you have a ScreenGui with a Frame and a TextButton inside it. You can set this up in Roblox Studio as follows:
 
@@ -70,4 +71,4 @@ button.MouseButton1Click:Connect(togglePosition)
 9. **Button Click Event**: We connect the `togglePosition` function to the button's `MouseButton1Click` event.
 
 This script will make the frame move to a new position when the button is clicked and move back to its original position when clicked again, creating a toggle effect.
-`
+----------------------------------------------------------------------------
